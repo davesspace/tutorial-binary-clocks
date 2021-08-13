@@ -134,6 +134,9 @@ def plot_update(frame):
             clock.increment(dt, update=True)
     return (*updatables,)
 
+if __name__ == "__main__":
 
-ani = FuncAnimation(fig, func=plot_update, interval=1000 /
-                    FPS, frames=range(Nframes), blit=True, repeat=False)
+    ani = FuncAnimation(fig, func=plot_update, interval=1000 /
+                        FPS, frames=range(Nframes), blit=True, repeat=False)
+
+    plt.show()
